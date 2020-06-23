@@ -27,9 +27,26 @@ NodeB.next = NodeC
 # Third node refer to fourth node
 NodeC.next = NodeD
 
+
+
+
 # Print Nodes
-print(NodeA)
+# print(NodeA)
 
 # Traverse linked list
+def PrintLinkedList(head):
+    if head is not None:
+        current = head
+        ListSize = 1
+        while current is not None:
+            print(current.data)
+            current = current.next
+            ListSize += 1
+        return print("List Size is : ", ListSize , end=" ")
+    else:
+        return print("Head has no value")
+
+PrintLinkedList(NodeA)
+
 # Insert element in linked list
 # Remove element in linked list
