@@ -27,13 +27,13 @@ NodeB.next = NodeC
 # Third node refer to fourth node
 NodeC.next = NodeD
 
-
-
-
+#--- For Testing ---#
 # Print Nodes
 # print(NodeA)
 
-# Traverse linked list
+
+#--- Print / Traversal of Linked list ---#
+# Print linked list
 def PrintLinkedList(head):
     if head is not None:
         current = head
